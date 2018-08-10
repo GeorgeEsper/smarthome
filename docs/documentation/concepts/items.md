@@ -149,7 +149,7 @@ There can be metadata attached to an Item for as many namespaces as desired, lik
 
     Switch "My Fan" { homekit="Fan.v2", alexa="Fan" [ type="oscillating", speedSteps=3 ] }
 
-The metadata can alternatively maintained via a dedicated REST endpoint and is included in the `EnrichedItemDTO` responses.
+The metadata can alternatively be maintained via a dedicated REST endpoint and is included in the `EnrichedItemDTO` responses.
 
 Extensions which can infer some metadata automatically need to implement an register a `MetadataProvider` service in order to make them available to the system. 
 They may provision them from any source they like and also dynamically remove or add data. 
