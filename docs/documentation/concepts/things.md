@@ -48,7 +48,7 @@ The following table provides an overview of the different statuses:
 | REMOVING      | The device/service represented by a Thing should be removed, but the binding did not confirm the deletion yet. Some bindings need to communicate with the device to unpair it from the system. Thing is probably not working and commands can not be processed.                                                                                                                                                                                                                           |
 | REMOVED       | This status indicates that the device/service represented by a Thing was removed from the external system after the REMOVING was initiated by the framework. Usually this status is an intermediate status because the Thing gets removed from the database after this status was assigned.                                                                                                                                                                                               |
 
-The statuses UNINITIALIZED, INITIALIZING and REMOVING are set by the framework, where as the statuses UNKNOWN, ONLINE and OFFLINE are assigned from a binding.
+The statuses UNINITIALIZED, INITIALIZING and REMOVING are set by the framework, whereas the statuses UNKNOWN, ONLINE and OFFLINE are assigned from a binding.
 
 Additionally, the REMOVED state is set by the binding to indicate that the removal process has been completed, i.e. the Thing must have been in REMOVING state before.
 
